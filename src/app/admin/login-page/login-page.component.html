@@ -3,6 +3,7 @@
 
 
   <div class="alert alert-danger" *ngIf="auth.error$ | async as error"> {{error}} </div>
+  <div class="alert alert-info" *ngIf="message"> {{message}} </div>
 
   <div
     class="form-control"
