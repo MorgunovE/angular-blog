@@ -7,7 +7,7 @@ import {catchError, tap} from "rxjs/operators";
 import {throwError} from "rxjs";
 import {Subject} from "rxjs";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AuthService {
 
   public error$: Subject<string> = new Subject<string>()
